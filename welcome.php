@@ -1,17 +1,3 @@
-<?php
-
-session_start();
-
-if (!isset($_SESSION["user_id"])) {
-    header("Location: index.php");
-}
-
-echo $_SESSION["user_id"];
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +14,7 @@ echo $_SESSION["user_id"];
 <body>
 
 <?php include 'menu.php'; ?>
+
 
 
   <!--SLIDER PART-->
